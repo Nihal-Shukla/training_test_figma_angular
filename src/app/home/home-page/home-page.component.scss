@@ -1,0 +1,167 @@
+
+@import '../../custom.scss';
+$font-family: sans-serif;
+
+
+// 1st page css
+.mainn{
+    height:90vh;
+    overflow: hidden;
+.text{
+  
+    font-family: $font-family;
+    margin-top: 100px;
+
+    h2{
+        font-weight: 550;
+    }
+    p{
+        color: $main_text_color;
+    }
+        button{
+            background-color:$button_color;
+            color: $button_text_color;
+            border-radius: 25px;
+            border: none;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+    
+    }
+
+.image{
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color:$orange_box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -5em;
+    bottom: -5em;
+    img{
+height: 450px;
+width: 500px;
+position: relative;
+bottom: 10em;
+right: 9rem;
+    } 
+}
+
+}
+
+
+// blue background sass
+
+.blue_background{
+    background-color: $blue_bg_color;
+    color: $button_text_color;
+
+   overflow: hidden;
+ h2{
+        margin: 100px 0px 30px 0px;
+    }
+    p{
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    button{
+        background-color: $black_color;
+        border: 1px solid $button_text_color;
+        width: 200px;
+     
+    }
+img{
+   height: 500px;
+   width: 500px;
+    position: relative;
+bottom: 20px;
+}
+}
+
+// car services
+
+.car_service{
+    .container{     
+        p{          
+            font-size: 1.1rem;
+            color:$services_box_bg;
+            font-family: $font-family;
+        }
+        .row{
+    div{
+      
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+}
+}
+}
+
+.box-model{
+    background-color: #f4f6fa;
+
+    .row{
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}
+
+// car-logo saas
+.car_logo{
+.car_logo_text{
+
+h2{
+    font-size: 60px;
+    font-weight: 900;
+}
+p{
+font-family: $font-family;
+font-size: 1rem;
+color: $car_logo_text;
+}
+
+}
+
+@media ( max-width: 576px) {
+   img{
+    height: 80px;
+   }
+    
+}
+
+}
+
+
+// Location sass
+
+.location_page{
+
+    background-color:$location_bg_color;
+    .location_text{
+        h2{
+            font-size: 60px;
+            font-weight: 900;
+        }
+        p{
+        font-family: $font-family;
+        font-size: 1rem;
+        color: $car_logo_text;
+        }
+    }
+    .location_image{
+        position: relative;
+        left: 1.7rem;
+        
+    }
+}

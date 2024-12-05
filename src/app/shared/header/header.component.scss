@@ -1,0 +1,25 @@
+
+@import '../../custom.scss';
+button{
+    background-color:$button_color;
+    color: $button_text_color;
+    border-radius: 25px;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.nav_text{
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: sans-serif;
+    a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+span{
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: sans-serif;
+}
