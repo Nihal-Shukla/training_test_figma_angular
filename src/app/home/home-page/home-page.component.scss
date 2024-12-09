@@ -1,167 +1,285 @@
-
 @import '../../custom.scss';
 $font-family: sans-serif;
 
 
-// 1st page css
-.mainn{
-    height:90vh;
-    overflow: hidden;
-.text{
-  
-    font-family: $font-family;
-    margin-top: 100px;
 
-    h2{
-        font-weight: 550;
+// 1st page css
+.mainn {
+    max-height: 90vh;
+
+    @media only screen and (max-width:576px) {
+        max-height: 60vh;
     }
-    p{
-        color: $main_text_color;
-    }
-        button{
-            background-color:$button_color;
+
+    overflow: hidden;
+
+    .text {
+        font-family: $font-family;
+        margin-top: 100px;
+
+        h2 {
+            font-weight: 550;
+        }
+
+        p {
+            color: $main_text_color;
+        }
+
+        button {
+            background-color: $button_color;
             color: $button_text_color;
             border-radius: 25px;
             border: none;
             font-size: 0.9em;
             font-weight: 600;
         }
-    
+
     }
 
-.image{
-    height: 1000px;
-    width: 1000px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color:$orange_box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: -5em;
-    bottom: -5em;
-    img{
-height: 450px;
-width: 500px;
-position: relative;
-bottom: 10em;
-right: 9rem;
-    } 
-}
+    .image {
+        height: 1000px;
+        width: 1000px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $orange_box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: -5em;
+        bottom: -5em;
+
+        @media only screen and (max-width:576px) {
+            height: 400px;
+            width: 400px;
+            position: relative;
+            bottom: 4rem;
+            right: -9rem;
+        }
+
+        img {
+            height: 450px;
+            width: 500px;
+            position: relative;
+            bottom: 10em;
+            right: 9rem;
+
+            @media only screen and (max-width:576px) {
+                height: 180px;
+                width: 180px;
+                position: relative;
+                right: 4rem;
+                bottom: 5rem;
+            }
+        }
+    }
 
 }
-
-
 // blue background sass
 
-.blue_background{
+.blue_background {
     background-color: $blue_bg_color;
     color: $button_text_color;
 
-   overflow: hidden;
- h2{
+    overflow: hidden;
+
+    h2 {
         margin: 100px 0px 30px 0px;
     }
-    p{
+
+    p {
         font-family: $font-family;
         font-size: 1.2rem;
         font-weight: 300;
     }
 
-    button{
+    button {
         background-color: $black_color;
         border: 1px solid $button_text_color;
         width: 200px;
-     
+
     }
-img{
-   height: 500px;
-   width: 500px;
-    position: relative;
-bottom: 20px;
-}
+
+    img {
+        height: 500px;
+        width: 500px;
+        position: relative;
+        bottom: 20px;
+    }
 }
 
 // car services
 
-.car_service{
-    .container{     
-        p{          
-            font-size: 1.1rem;
-            color:$services_box_bg;
-            font-family: $font-family;
-        }
-        .row{
-    div{
-      
-        border-radius: 10px;
-        overflow: hidden;
+.car_service {
+
+    p {
+        font-size: 1.1rem;
+        color: $services_box_bg;
+        font-family: $font-family;
     }
-    
-}
-}
-}
 
-.box-model{
-    background-color: #f4f6fa;
+    .row {
+        div {
 
-    .row{
-        .text{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+    }
+
+    .box-model {
+        background-color: #f4f6fa;
+
+        .row {
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
 
 // car-logo saas
-.car_logo{
-.car_logo_text{
+.car_logo {
+    .car_logo_text {
 
-h2{
-    font-size: 60px;
-    font-weight: 900;
-}
-p{
-font-family: $font-family;
-font-size: 1rem;
-color: $car_logo_text;
-}
-
-}
-
-@media ( max-width: 576px) {
-   img{
-    height: 80px;
-   }
-    
-}
-
-}
-
-
-// Location sass
-
-.location_page{
-
-    background-color:$location_bg_color;
-    .location_text{
-        h2{
+        h2 {
             font-size: 60px;
             font-weight: 900;
         }
-        p{
-        font-family: $font-family;
-        font-size: 1rem;
-        color: $car_logo_text;
+
+        p {
+            font-family: $font-family;
+            font-size: 1rem;
+            color: $car_logo_text;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        img {
+            height: 50px;
+        }
+
+    }
+
+}
+// Location sass
+
+.location_page {
+    background-color: $location_bg_color;
+
+    .location_text {
+        h2 {
+            font-size: 60px;
+            font-weight: 900;
+        }
+
+        p {
+            font-family: $font-family;
+            font-size: 1.2rem;
+            color: $car_logo_text;
+        }
+
+        .location_image {
+            img {
+                position: relative;
+                left: 17%;
+                object-fit: cover;
+            }
         }
     }
-    .location_image{
+
+}
+
+// Engineering Page
+
+.engineer_bgimage {
+    background-image: url("../../../../public/Images/engineer_image.png");
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        min-height: 700px;
+    }
+
+    .message_box {
+        max-width: 450px;
+        width: max-content;
+        background-color: $button_text_color;
+        border-radius: 30px;
         position: relative;
-        left: 1.7rem;
-        
+        justify-content: end;
+
+        input {
+            min-height: 50px;
+            background-color: $message_box_input_bgcolor;
+            border-radius: 25px;
+            border: none;
+
+        }
+
+        button {
+
+            min-height: 50px;
+        }
+    }
+
+}
+
+// Meeting section
+.meeting_section {
+    .meeting_text {
+        p {
+            font-family: sans-serif;
+            font-size: 1.1rem;
+
+            #highlight_text {
+                color: #a03583;
+            }
+        }
+
+        .text_gradient {
+            .line_gradient {
+                min-height: 100px;
+                width: 10px;
+                background-color: #a03583;
+
+            }
+
+            .italic_gradient {
+                i {
+                    color: #a03583;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .sun_logo {
+        height: 50px;
+        width: 50px;
+        background-color: #FBAB7E;
+        border-radius: 50%;
+        z-index: -1;
+        position: relative;
+        top: 3rem;
+        right: 1rem;
+    }
+
+    .violet_circle {
+        height: 30px;
+        width: 30px;
+        background-color: #a03583;
+        border-radius: 50%;
+        z-index: -1;
+        position: relative;
+        top: -1.5rem;
+
     }
 }
+
+// meeting section end
